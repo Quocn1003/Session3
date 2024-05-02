@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+
+<body>
+    <!--table -tạo bảng-->
+    <!--
+        Các thuộc tính của bảng(property):
+        border: tạo đường viền cho table
+        cellpađing: khoảng cách từ border của ô đến nội dung
+        cellspacing: khoảng cách từ border của bảng đến border của ô
+    -->
+    <table border="1" cellpadding="15" cellspacing="0">
+        <caption>Bảng quản lí sinh viên</caption>
+        <thead>
+            <!--Phần đầu của bảng-->
+            <tr>
+                <th>STT</th>
+                <th>Họ và tên</th>
+                <th>Quê quán</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--Phần thân của bảng-->
+            <tr>
+                <td>1</td>
+                <td>Nguyễn Minh Thu</td>
+                <td>Hà Nội</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nguyễn Minh Ngọc</td>
+                <td>HCM</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!--Phần chân của bảng-->
+            <tr>
+                <td colspan="2">Tổng số sinh viên</td>
+                <td>2</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

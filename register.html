@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+</head>
+
+<body>
+    <!--    
+        Tạo một form cho người dùng đăng kí
+        Các thuộc tính hay dùng trong input:
+        type = "text" : mặc định
+        type = "number": chỉ nhập số
+        type = "password" : ẩn nội dung
+        type = "email" : bắt buộc phải có @
+        type = "date": tạo ra một ô nhập gồm ngày tháng năm
+        type = "time": thời gian
+        type = "color" : bảng chọn màu
+        type = "checkbox": hiển thị ô chọn
+        type = "radion": các ô input có giá trị ở thuộc tính anme giống nhau thì chỉ lựa chọn được 1 cái
+        select: tạo bảng chọn
+        button: nút bấm gửi dữ liệu lên server
+        action: dịa chỉ nơi nhận dữ liệu
+        regex: validate dữ liệu
+        required: yêu cầu bắt buộc phải nhập
+        placeholder: gợi ý nhập
+        disabled: che các element không tương tác được
+        autocomplete = "on": giá định mặc định là on, nếu off thì sẽ không hiển thị phần gợi ý nhập
+        id: dùng để định danh cho thẻ ( element)
+
+        <fieldset: tạo vùng dữ liệu ;  legend: tiêu đề ngay giữa line>
+    -->
+    <form action="" autocomplete="on">
+        <label for="username">userName</label>
+        <input id="username" type="text" placeholder="Mời nhập tên"> <br>
+        <label for="email">email</label>
+        <input required id="email" type="email"><br>
+        <label for="pass">password</label>
+        <input id="pass" type="password"><br>
+        <label for="cfpass">comfirmpassword</label>
+        <input id="cfpass" type="password"><br>
+        <label for="date">Date</label>
+        <input id="date" type="date"><br>
+        <label for="time">Time</label>
+        <input id="time" type="time"><br>
+        <label for="corlor">Color</label>
+        <input id="color" type="color"><br>
+        A <input type="checkbox">
+        B <input type="checkbox"><br>
+        <label for="gender">Gender:</label>
+        Nam<input name="gender" type="radio">
+        Nữ<input name="gender" type="radio"><br>
+        <select name="" id="">
+            <option value="">Hà Nội</option>
+            <option value="">Đà Nẵng</option>
+            <option value="">HCM</option>
+        </select><br>
+        <label for="">Disabled</label>
+        <input type="text" disabled><br>
+        <textarea name="" id="" cols="30" rows="5"></textarea><br>
+        <button>Register</button>
+    </form>
+</body>
+
+</html>
